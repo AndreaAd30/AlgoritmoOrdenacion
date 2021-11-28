@@ -60,12 +60,5 @@ public class DatosDesordenados {
         System.out.println("BS-intercambios="+ci);
         return new DatosOrdenados(arreglo);
     }
-    @Override
-    public String toString(){
-        String cad="Datos desordenados";
-        for(int x:valores){
-            cad+=x+", ";
-        }
-        return cad;
-    }
+    
 }
