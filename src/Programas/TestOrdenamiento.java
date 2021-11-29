@@ -19,6 +19,12 @@ public class TestOrdenamiento {
         t2=System.nanoTime();
         t=t2-t1;
         System.out.println("n="+n+"t="+t+"ns.Burbuja="+mob);
+        
+        t1 = System.nanoTime();
+        DatosOrdenados moq = m.QuickSort();
+        t2 = System.nanoTime();   // stop
+        t = t2 - t1;
+        System.out.println("n="+ n + " t=" + t + " ns. QuickSort= " + moq);
     }
     
 }
