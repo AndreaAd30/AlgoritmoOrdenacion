@@ -25,6 +25,13 @@ public class TestOrdenamiento {
         t2 = System.nanoTime();   // stop
         t = t2 - t1;
         System.out.println("n="+ n + " t=" + t + " ns. QuickSort= " + moq);
+        
+        t1 = System.nanoTime();
+        DatosOrdenados ms = mr.RadixSort();
+        t2 = System.nanoTime();   // stop
+        t = t2 - t1;
+        System.out.println("n="+ n + " t=" + t + " ns. RadixSort= " + mrs);
+        
     }
     
 }
